@@ -1,0 +1,58 @@
+<article class="payment-form">
+  <form [formGroup]="formGroup">
+    <section class="products">
+      <div class="scu-note-image"
+           [style.backgroundImage]="'url('+imageBackground+')'"></div>
+
+      <div class="scu-note-small-section">
+        <img class="scu-note-author"
+             src="https://i.ibb.co/yPKKpSv/9034959-refresh-circle-icon.png"
+             alt=""
+             (click)="onClickRefresh()">
+      </div>
+    </section>
+
+    <section class="card-details">
+      <h3 class="title">Create Note Details</h3>
+      <section class="row">
+        <div class="form-group col-sm-7">
+          <label for="note-title">Note Title</label>
+          <input id="note-title"
+                 type="text"
+                 class="form-control"
+                 placeholder="Create a note title"
+                 aria-label="Note Title"
+                 aria-describedby="basic-addon1"
+                 formControlName="title">
+        </div>
+
+        <div class="form-group col-sm-8">
+          <label for="description">Description</label>
+          <textarea id="description"
+                    class="form-control"
+                    placeholder="Create a note description"
+                    aria-label="Description"
+                    aria-describedby="basic-addon1"
+                    formControlName="description"></textarea>
+        </div>
+
+        <div class="form-group col-sm-4">
+          <label for="author">Author</label>
+          <input id="author"
+                 type="text"
+                 class="form-control"
+                 placeholder="Author"
+                 aria-label="Author"
+                 aria-describedby="basic-addon1"
+                 formControlName="author">
+        </div>
+
+        <div class="form-group col-sm-12">
+          <button type="button"
+                  class="btn btn-primary btn-block" (click)="onClickProceed()">Proceed
+          </button>
+        </div>
+      </section>
+    </section>
+  </form>
+</article>

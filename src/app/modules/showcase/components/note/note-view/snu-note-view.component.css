@@ -1,0 +1,36 @@
+.snu-note-view-image {
+  border-radius: var(--border-radius);
+  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.snu-note-view-text {
+  padding: .5rem;
+}
+
+.snu-note-view-more-info {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+
+.snu-note-view-small-section {
+  display: flex;
+  font-size: var(--font-size-3);
+  justify-content: space-between;
+  font-weight: 500;
+  align-content: center;
+  align-items: center;
+  gap: .35rem
+}
+
+
+.snu-note-view-author {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  object-fit: cover;
+}

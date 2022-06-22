@@ -1,0 +1,13 @@
+<article class="payment-form dark">
+  <section class="container">
+    <div class="block-heading">
+      <h2>Create Note Section</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+    </div>
+
+    <app-post-view [imageBackground]="imageBackground"
+                   (refreshActivated)="refreshImageBackground($event)"
+                   (proceedActivated)="proceedNoteData($event)"
+                   (finalizeActivated)="finalizePostData($event)"></app-post-view>
+  </section>
+</article>

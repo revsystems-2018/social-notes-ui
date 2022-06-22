@@ -1,0 +1,22 @@
+<section class="snu-note-view-image"
+         [style.backgroundImage]="'url('+item?.image+')'"></section>
+
+<section class="snu-note-view-text">
+  <h3>{{item?.title}}</h3>
+  <section class="snu-note-view-more-info">
+    <div class="snu-note-view-small-section">
+      <span>{{item?.description}}</span>
+      <span><i class="uil uil-eye"></i></span>
+    </div>
+
+    <div class="snu-note-view-small-section">
+      <div class="snu-note-view-small-section">
+        <img class="snu-note-view-author"
+             src="https://i.ibb.co/jM7BvXM/rev-profile.jpg"
+             alt="">
+        <span>by Ricardo Veizaga</span>
+      </div>
+      <span><i class="uil uil-star"></i></span>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,12 @@
+<article class="snu-note-container">
+  <snu-note-view *ngIf="!fromCommentList && !fromAddComment"
+                 [item]="item"></snu-note-view>
+
+  <section *ngIf="!fromCommentList && !fromAddComment"
+           class="snu-section-btn align-center">
+    <a class="btn btn-lg btn-success display-7"
+       (click)="onClickAddComment()">Add Comment</a>
+    <a class="btn btn-lg btn-principal display-7"
+       (click)="onClickComments()">Comments</a>
+  </section>
+</article>

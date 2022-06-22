@@ -1,0 +1,49 @@
+<form class="container"
+      [formGroup]="formGroup">
+  <section class="card-details">
+    <section class="add-comment-header">
+      <h3 class="title">{{isUpdateView ? CREATE_TITLE : UPDATE_TITLE}}</h3>
+    </section>
+
+    <section class="row">
+      <div class="form-group col-sm-7">
+        <label for="note-title">Comment Title</label>
+        <input id="note-title"
+               type="text"
+               class="form-control"
+               placeholder="Create a note title"
+               aria-label="Note Title"
+               aria-describedby="basic-addon1"
+               formControlName="title">
+      </div>
+
+      <div class="form-group col-sm-8">
+        <label for="description">Description</label>
+        <textarea id="description"
+                  class="form-control"
+                  placeholder="Create a comment description"
+                  aria-label="Description"
+                  aria-describedby="basic-addon1"
+                  formControlName="description"></textarea>
+      </div>
+
+      <div class="form-group col-sm-4">
+        <label for="author">Author</label>
+        <input id="author"
+               type="text"
+               class="form-control"
+               placeholder="Author"
+               aria-label="Author"
+               aria-describedby="basic-addon1"
+               formControlName="author">
+      </div>
+
+      <div class="form-group col-sm-12">
+        <button type="button"
+                class="btn btn-primary btn-block"
+                (click)="onClickProceed()">Proceed
+        </button>
+      </div>
+    </section>
+  </section>
+</form>

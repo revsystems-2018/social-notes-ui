@@ -1,0 +1,10 @@
+<div class="ui-gap">
+  <snu-search-note></snu-search-note>
+
+  <snu-filter-note *ngIf="false"></snu-filter-note>
+
+  <comments-container *ngIf="true"></comments-container>
+
+  <span *ngIf="loadState">Loading...</span>
+  <snu-list-note></snu-list-note>
+</div>
