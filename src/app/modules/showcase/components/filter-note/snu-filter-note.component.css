@@ -1,0 +1,60 @@
+.snu-wrapper {
+    padding: 0 1rem;
+}
+
+.snu-filter {
+    padding: 0 .5rem;
+    background-color: var(--color-1);
+    border-radius: var(--border-radius);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.snu-filter-top {
+    width: 100%;
+}
+
+.snu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    gap: .5rem;
+}
+
+.snu-element {
+    cursor: pointer;
+    display: flex;
+    padding: .35rem .75rem;
+    font-weight: 500;
+    gap: .35rem;
+}
+
+.snu-filter-top {
+    padding: .5rem 0;
+}
+
+.snu-filter-bottom {
+    padding: 1.35rem 0;
+}
+
+.snu-element.snu-element-secondary {}
+
+.snu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.snu-opacity {
+    opacity: .35;
+}
+
+.snu-badge-primary {
+    background-color: var(--color-3);
+    border-radius: var(--border-radius);
+    color: var(--color-1);
+}
+
+.snu-more-gap {
+    gap: 2.5rem;
+}

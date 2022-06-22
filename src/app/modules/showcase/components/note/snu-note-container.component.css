@@ -1,0 +1,48 @@
+.snu-note-container {
+  cursor: pointer;
+  background-color: var(--color-1);
+  border-radius: var(--border-radius);
+  width: 275px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 0.2rem;
+}
+
+.snu-note-container:hover {
+  transition: all ease 150ms;
+  opacity: .6;
+}
+
+.snu-section-btn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30px;
+}
+
+.snu-section-btn a {
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.btn-success {
+  background-color: #35b8fc !important;
+  border-color: #35b8fc !important;
+  color: #ffffff !important;
+}
+
+.btn-principal {
+  background-color: #4579f6 !important;
+  border-color: #4579f6 !important;
+  color: #ffffff !important;
+}
+
+.btn {
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.align-center {
+  text-align: center;
+}
+

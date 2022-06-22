@@ -1,0 +1,18 @@
+<article class="comments-container no-padding">
+  <section class="comments-header">
+    <h3 class="title">Trending comments</h3>
+    <img class="comments-close-btn rounded-circle"
+         src="https://i.ibb.co/Mg2KD9F/3671739-close-solid-icon.png"
+         (click)="onClickClose()">
+  </section>
+
+  <ng-container *ngIf="true">
+    <comment-item-view *ngFor="let comment of commentList | async, let index=index"
+                       [commentItem]="comment"
+                       [profileImage]="profileImages[index]"></comment-item-view>
+  </ng-container>
+
+  <add-comment-view *ngIf="true"
+                    [isUpdateView]="fromUpdateComment"
+                    (proceedActivated)="onProceedComment($event)"></add-comment-view>
+</article>

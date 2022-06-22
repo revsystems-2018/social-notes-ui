@@ -1,0 +1,24 @@
+<div class="snu-wrapper">
+  <div class="snu-filter">
+    <div class="snu-filter-top">
+      <ul class="snu-list">
+        <li *ngFor="let a of test;first as f">
+          <div class="snu-element"
+               [ngClass]="{'snu-opacity':!f}">
+            <i class="snul snul-car"></i> <span>Notes</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="snu-filter-bottom">
+      <ul class="snu-list snu-more-gap">
+        <li *ngFor="let a of test;index as i">
+          <div [ngClass]="{'snu-badge-primary':i === 1}"
+               class="snu-element snu-element-secondary  ">
+            <i class="snul snul-car"></i> <span>Notes</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
